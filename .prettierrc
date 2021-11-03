@@ -1,0 +1,9 @@
+{
+  "jsxSingleQuote": true,
+  "jsxBracketSameLine": true,
+  "arrowParens": "always",
+  "noSpaceBetweenFunctionIdentifierAndParen": true,
+  "noSpaceBetweenButtons": true,
+  "noSpaceBetweenParens": true,
+  "singleQuote": true
+}

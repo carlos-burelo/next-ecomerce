@@ -1,0 +1,78 @@
+.header {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+.nav {
+  height: 75px;
+}
+.navList {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  height: 100%;
+}
+.cartButton,
+.brand {
+  position: fixed;
+  top: 15px;
+}
+.navItem .link {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+}
+.navItem .link:hover {
+  background-color: var(--primary);
+}
+.cartButton {
+  right: var(--content-width);
+  display: flex;
+}
+.brand {
+  font-size: 20px;
+}
+.cartButton q-icon {
+  font-size: 30px;
+}
+.navItem .link span {
+  font-weight: 600;
+}
+@media screen and (min-width: 600px) {
+  .header,
+  .brand,
+  .cartButton {
+    position: relative;
+    right: inherit;
+    top: inherit;
+  }
+  .header {
+    position: sticky;
+  }
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr 1fr 0.2fr;
+  }
+  .navItem .link {
+    flex-direction: row;
+  }
+  .navItem .link:hover,
+  .navItem .link:hover span {
+    background-color: transparent;
+    color: var(--primary);
+  }
+  .navItem .link q-icon {
+    margin-right: 10px;
+  }
+
+  .cartButton,
+  .brand {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .brand {
+    justify-content: start;
+  }
+}
